@@ -9,7 +9,7 @@ export class UserController {
   constructor(private userService: UserService) {}
 
   @Post()
-  createUser(@Body() poserUserLogin: PostUserLogin) {
-    console.log(poserUserLogin);
+  createUser(@Body() request: PostUserLogin) {
+    console.log(request);
   }
 }
