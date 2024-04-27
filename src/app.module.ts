@@ -4,7 +4,11 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { ProductModule } from './product/product.module';
 
 @Module({
-  imports: [MongooseModule.forRoot(process.env.MONGO_URI), UserModule, ProductModule],
+  imports: [
+    MongooseModule.forRoot(process.env.MONGO_URI),
+    UserModule,
+    ProductModule,
+  ],
   controllers: [],
   providers: [],
 })
